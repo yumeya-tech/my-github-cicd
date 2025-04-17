@@ -1,0 +1,9 @@
+name: Context Example
+
+on: push
+
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "${{ github.actor }}" # GitHubのユーザー名を出力
